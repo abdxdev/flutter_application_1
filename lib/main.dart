@@ -1,20 +1,25 @@
 import 'package:flutter/material.dart';
+import 'screens/main_navigation.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MiniECommerceApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MiniECommerceApp extends StatelessWidget {
+  const MiniECommerceApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+    return MaterialApp(
+      title: 'Mini E-Commerce App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+        textTheme: const TextTheme(
+          bodyLarge: TextStyle(fontSize: 16.0, color: Colors.black),
         ),
       ),
+      home: const MainNavigationContainer(),
     );
   }
 }
