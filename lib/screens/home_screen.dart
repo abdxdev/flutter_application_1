@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget {
             // Categories 
             const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text(n
+              child: Text(
                 "Categories",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
